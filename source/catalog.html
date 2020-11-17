@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="logo-image" src="https://via.placeholder.com/150x150">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__title">
+        <h1 class="title">Фотографии пользователей</h1>
+      </div>
+      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="photo-comments">
+        <ul class="photo-comments__list">
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image image__panorama" src="https://via.placeholder.com/150x150">
+              <p>Панорама дня</p>
+            </div>
+            <h3>Анна<span>(5 минут назад)</span></h3>
+            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:215</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Левон<span>(5 часов назад)</span></h3>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:356</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Антон<span>(12 часов назад)</span></h3>
+            <p>Соседи будут рады!</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:666</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Борис<span>(20 часов назад)</span></h3>
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:215</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Сергей<span>(25 часов назад)</span></h3>
+            <p>Самая кубанская в мире!</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:4</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Максим<span>(40 часов назад)</span></h3>
+            <p>Где снег-то?</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:150</span>
+          </li>
+          <li class="photo-comments__item">
+            <div class="photo-comments__image">
+              <img class="image" src="https://via.placeholder.com/150x150">
+            </div>
+            <h3>Надежда<span>(45 часов назад)</span></h3>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo-comments__button">
+              <span class="visually-hidden">like</span>
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <span class="photo-comments__color">Нравится:2560</span>
+          </li>
+        </ul>
+        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+
+      <section class="photo-editor">
+        <form class="photo-editor__form" action="" method="POST">
+          <div class="photo-editor__image">
+            <img class="image-download" src="https://via.placeholder.com/150x150">
+          </div>
+          <div class="photo-editor__tools tools">
+            <ul class="tools__list">
+              <li class="tools__item">
+                <span class="visually-hidden">Обрезка</span>
+                <button class="tools__button">
+                  <img class="tools__image" src="https://via.placeholder.com/150x150">
+                </button>
+              </li>
+              <li class="tools__item">
+                <span class="visually-hidden">Заливка фона</span>
+                <button class="tools__button">
+                  <img class="tools__image" src="https://via.placeholder.com/150x150">
+                </button>
+              </li>
+              <li class="tools__item">
+                <span class="visually-hidden">Контрастность</span>
+                <button class="tools__button">
+                  <img class="tools__image" src="https://via.placeholder.com/150x150">
+                </button>
+              </li>
+            </ul>
+            <span class="visually-hidden">Шкала приближения</span>
+            <input type="range" min="1" max="100">
+          </div>
+          <input class="photo-editor__input" type="submit" value="Запостить">
+          <input class="photo-editor__input" type="reset" value="Отмена">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img class="page-footer__image" src="https://via.placeholder.com/150x150">
+        <a class="page-footer__logo" href="index.html">
+          <img class="logo__image" src="https://via.placeholder.com/150x150">
+        </a>
+      </div>
+      <div class="page-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Twitter</span>
+              <img class="social__image" src="https://via.placeholder.com/150x150">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Facebook</span>
+              <img class="social__image" src="https://via.placeholder.com/150x150">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Youtube</span>
+              <img class="social__image" src="https://via.placeholder.com/150x150">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copy">
+        <p>Разработано</p>
+        <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <img class="copy__image" src="https://via.placeholder.com/150x150">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>

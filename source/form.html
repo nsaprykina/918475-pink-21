@@ -9,7 +9,7 @@
 
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="logo-image" src="https://via.placeholder.com/150x150">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150">
       </a>
       <button class="main-nav__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
       <nav class="main-nav">
@@ -40,7 +40,7 @@
 
     <main class="page-main">
       <div class="page-main__title">
-        <h1 class="title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-mail__title-first">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
@@ -95,22 +95,22 @@
         <fieldset class="form__application">
           <legend class="form__label">С каким приложением путешествовать?</legend>
           <div class="form__system">
-            <input class="sistem__input" type="radio" name="application" id="iOS-field" value="iOS" checked>
-            <label class="sistem__label" for="iOS-field">Pink для iOS</label>
+            <input class="form__sistem-input" type="radio" name="application" id="iOS-field" value="iOS" checked>
+            <label class="form__sistem-label" for="iOS-field">Pink для iOS</label>
           </div>
           <div class="form__sistem">
-            <input class="sistem__input" type="radio" name="application" id="android-field" value="android">
-            <label class="sistem__label" for="android-field">Pink на Android</label>
+            <input class="form__sistem-input" type="radio" name="application" id="android-field" value="android">
+            <label class="form__sistem-label" for="android-field">Pink на Android</label>
           </div>
           <div class="form__sistem">
-            <input class="sistem__input" type="radio" name="application" id="windows-field" value="windows">
-            <label class="sistem__label" for="windows-field">Windows Phone</label>
+            <input class="form__sistem-input" type="radio" name="application" id="windows-field" value="windows">
+            <label class="form__sistem-label" for="windows-field">Windows Phone</label>
           </div>
         </fieldset>
 
         <fieldset class="form__textarea">
-          <label class="textarea__label" for="commit-field">Опишите свои эмоции</label>
-          <textarea name="commit" id="commit-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <label class="form__textarea-label" for="commit-field">Опишите свои эмоции</label>
+          <textarea class="form__textarea-commit" name="commit" id="commit-field">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
 
         <input class="form__submit" type="submit" value="Отправить форму">
@@ -121,13 +121,13 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
+      <div class="page-footer__logo-content">
         <img class="page-footer__image" src="https://via.placeholder.com/150x150">
         <a class="page-footer__logo" href="index.html">
-          <img class="logo__image" src="https://via.placeholder.com/150x150">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150">
         </a>
       </div>
-      <div class="page-footer__social">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link">
@@ -158,16 +158,16 @@
       </div>
     </footer>
 
-    <section class="page-modal__arror">
-      <h2 class="page-modal__title">Что-то пошло не так!</h2>
+    <section class="page-modal-arror">
+      <h2 class="page-modal-arror__title">Что-то пошло не так!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="page-modal__button">Ок</button>
+      <button class="page-modal-arror__button">Ок</button>
     </section>
 
-    <section class="page-modal__confirmation">
-      <h2 class="page-modal__title">Ваша заявка отправлена</h2>
+    <section class="page-modal-confirmation">
+      <h2 class="page-modal-confirmation__title">Ваша заявка отправлена</h2>
       <p>Спасибо за ваше участие, ваша уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="page-modal__button">Закрыть окно</button>
+      <button class="page-modal-confirmation__button">Закрыть окно</button>
     </section>
 
   </body>

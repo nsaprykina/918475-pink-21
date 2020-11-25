@@ -48,10 +48,10 @@
           <li class="photo-comments__item">
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery photo-comments__image-gallery--panorama" src="https://via.placeholder.com/150x150">
-              <p>Панорама дня</p>
+              <p class="photo-comments__panorama">Панорама дня</p>
             </div>
-            <h3 class="photo-comments__title">Анна<span>(5 минут назад)</span></h3>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <h3 class="photo-comments__title">Анна<span class="photo-comments__time">(5 минут назад)</span></h3>
+            <p class="photo-comments__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -62,8 +62,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Левон<span>(5 часов назад)</span></h3>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <h3 class="photo-comments__title">Левон<span class="photo-comments__time">(5 часов назад)</span></h3>
+            <p class="photo-comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -74,8 +74,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Антон<span>(12 часов назад)</span></h3>
-            <p>Соседи будут рады!</p>
+            <h3 class="photo-comments__title">Антон<span class="photo-comments__time">(12 часов назад)</span></h3>
+            <p class="photo-comments__text">Соседи будут рады!</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img  class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -86,8 +86,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Борис<span>(20 часов назад)</span></h3>
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <h3 class="photo-comments__title">Борис<span class="photo-comments__time">(20 часов назад)</span></h3>
+            <p class="photo-comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
@@ -98,8 +98,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Сергей<span>(25 часов назад)</span></h3>
-            <p>Самая кубанская в мире!</p>
+            <h3 class="photo-comments__title">Сергей<span class="photo-comments__time">(25 часов назад)</span></h3>
+            <p class="photo-comments__text">Самая кубанская в мире!</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -110,8 +110,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Максим<span>(40 часов назад)</span></h3>
-            <p>Где снег-то?</p>
+            <h3 class="photo-comments__title">Максим<span class="photo-comments__time">(40 часов назад)</span></h3>
+            <p class="photo-comments__text">Где снег-то?</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -122,8 +122,8 @@
             <div class="photo-comments__image">
               <img class="photo-comments__image-gallery" src="https://via.placeholder.com/150x150">
             </div>
-            <h3 class="photo-comments__title">Надежда<span>(45 часов назад)</span></h3>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <h3 class="photo-comments__title">Надежда<span class="photo-comments__time">(45 часов назад)</span></h3>
+            <p class="photo-comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <a class="photo-comments__button">
               <span class="visually-hidden">like</span>
               <img class="photo-comments__button-image" src="https://via.placeholder.com/150x150">
@@ -131,7 +131,7 @@
             <span class="photo-comments__color">Нравится:2560</span>
           </li>
         </ul>
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo-comments__appeal">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
       <section class="photo-editor">
@@ -163,8 +163,8 @@
             <span class="visually-hidden">Шкала приближения</span>
             <input class="tools__input-range" type="range" min="1" max="100">
           </div>
-          <input class="photo-editor__input" type="submit" value="Запостить">
-          <input class="photo-editor__input" type="reset" value="Отмена">
+          <input class="photo-editor__input phote-editor__input--submit" type="submit" value="Запостить">
+          <input class="photo-editor__input phote-editor__input--reset" type="reset" value="Отмена">
         </form>
       </section>
     </main>

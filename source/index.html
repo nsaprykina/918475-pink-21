@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page-body">
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="logo-image" src="https://via.placeholder.com/150x150">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150">
       </a>
-      <button class="main-nav__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      <button class="page-header__toggle" type="button"><span class="page-header__button">Открыть меню</span></button>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a>
+            <a class="main-nav__link">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Фотографии
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -40,11 +41,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "PINK"</h1>
       <section class="info">
-        <div class="info__title">
-          <h2 class="title">Взгляните на жизнь иначе!</h2>
-          <img class="title__image" src="https://echo.htmlacademy.ru">
+        <div class="info__content">
+          <h2 class="info__title">Взгляните на жизнь иначе!</h2>
         </div>
-        <a class="info__button" href="#">Скачать приложение</a>
+        <div class="info__button">
+          <a class="info__button-link" href="#">Скачать приложение</a>
+        </div>
         <ul class="info__list">
           <li class="info__item">
             <a href="#">
@@ -62,29 +64,32 @@
             </a>
           </li>
         </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="info__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="advantage">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить</p>
+        <div class="advantage__content">
+          <p class="advantage__content-paragraph">Устали от серости мегаполиса?</p>
+          <p class="advantage__content-paragraph">Нам есть, что вам предложить</p>
+        </div>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <h3>Поднимаем настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="advantage__title">Поднимаем настроение</h3>
+            <p class="advantage__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantage__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
+            <p class="advantage__paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantage__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="advantage__title">Заводит новых друзей</h3>
+            <p class="advantage__paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <div class="advantage__image advantage__image--phone">
-          <img class="advantage__screen" src="https://via.placeholder.com/150x150">
+          <img class="advantage__screen-1" src="./img/iphone_3.png" width="157" height="320">
+          <img class="advantage__screen-3" src="./img/iphone_screen-3.jpg" width="136" height="245">
         </div>
       </section>
 
@@ -93,17 +98,16 @@
         <div class="slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <h3>Николай Петров</h3>
-              <span>25 лет, водитель трамвая</span>
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <h3 class="slider__title">Николай Петров</h3>
+              <p class="slider__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="slider__item">
-              <h3>Ксения Алексеевна</h3>
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <h3 class="slider__title">Ксения Алексеевна</h3>
+              <p class="slider__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="slider__item">
-              <h3>Водитель автобуса</h3>
-              <p>Данное приложение приглянулось мне своим ярким оформлением. А ещё он прост в своём использовании.</p>
+              <h3 class="slider__title">Водитель автобуса</h3>
+              <p class="slider__paragraph">Данное приложение приглянулось мне своим ярким оформлением. А ещё он прост в своём использовании.</p>
             </li>
           </ul>
           <p class="reviews__toggle slider__toggles">
@@ -116,62 +120,64 @@
 
       <section class="price">
         <h2 class="visually-hidden">Цены на дополнения</h2>
-        <div class="slider">
+        <div class="price__content">
           <table class="price__table">
             <tr class="price__strong">
-              <th class="price__cell">
-                <h3>База</h3>
-                <p>1,99 USD</p>
+              <th class="price__cell-header">
+                <h3 class="price__title">База</h3>
+                <p class="price__service">1,99 USD</p>
               </th>
-              <th class="price__cell">
-                <h3>Стандарт</h3>
-                <p>3,99 USD</p>
-                <span class="price__hit">хит</span>
+              <th class="price__cell-header">
+                <h3 class="price__title">Стандарт</h3>
+                <p class="price__service">3,99 USD</p>
+                <div class="price__hit">
+                  <span class="price__hit-brand">хит</span>
+                </div>
               </th>
-              <th class="price__cell">
-                <h3>Анлим</h3>
-                <p>9,99 USD</p>
+              <th class="price__cell-header">
+                <h3 class="price__title">Анлим</h3>
+                <p class="price__service">9,99 USD</p>
               </th>
             </tr>
-            <tr class="price__strong">
+            <tr class="price__no-strong">
               <td class="price__cell">
-                <p>Розовый фильтр</p>
+                <p class="price__name-service">Розовый фильтр</p>
                 <span class="price__on">Функция включена</span>
               </td>
               <td class="price__cell">
-                <p>Розовый фильтр</p>
+                <p class="price__name-service">Розовый фильтр</p>
                 <span class="priсe__on">Функция включена</span>
               </td>
               <td class="price__cell">
-                <p>Розовый фильтр</p>
+                <p class="price__name-service">Розовый фильтр</p>
                 <span class="priсe__on">Функция включена</span>
               </td>
             </tr>
-            <tr class="price__strong">
+            <tr class="price__no-strong">
               <td class="price__cell">
-                <p>Смайлики</p>
+                <p class="price__name-service">Смайлики</p>
                 <span class="price__off">Функция отключена</span>
               </td>
               <td class="price__cell">
-                <p>Смайлики</p>
+                <p class="price__name-service">Смайлики</p>
                 <span class="price__on">Функция включена</span>
               </td>
               <td class="price__cell">
-                <p>Смайлики</p>
+                <p class="price__name-service">Смайлики</p>
                 <span class="price__on">Функция включена</span>
               </td>
             </tr>
-            <tr class="price__strong">
+            <tr class="price__no-strong">
               <td class="price__cell">
-                <p>Комментарии</p>
+                <p class="price__name-service">Комментарии</p>
                 <span class="price__off">Функция отключена</span>
               </td>
               <td class="price__cell">
-                <p>Комментарии</p>
+                <p class="price__name-service">Комментарии</p>
                 <span class="price__off">Функция отключена</span>
               </td>
               <td class="price__cell">
-                <p>Комментарии</p>
+                <p class="price__name-service">Комментарии</p>
                 <span class="price__on">Функция включена</span>
               </td>
             </tr>
@@ -188,31 +194,33 @@
         <h2 class="feedback__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="feedback__list">
           <li class="feedback__item">
-            <h3>Звоните:</h3>
-            <p>+7 (812) 555-66-66</p>
+            <h3 class="feedback__info">Звоните:</h3>
+            <p class="feedback__text">+7 (812) 555-66-66</p>
           </li>
           <li class="feedback__item">
-            <h3>Пишите:</h3>
-            <p>mail@htmlacademy.ru</p>
+            <h3 class="feedback__info">Пишите:</h3>
+            <p class="feedback__text">mail@htmlacademy.ru</p>
           </li>
           <li class="feedback__item">
-            <h3>Приезжайте в гости:</h3>
-            <p>ул. Большая Конюшенная, 19/8</p>
+            <h3 class="feedback__info">Приезжайте в гости:</h3>
+            <p class="feedback__text">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-        <img class="feedback__map" src="https://via.placeholder.com/150x150">
+        <div class="feedback__map">
+          <img class="feedback__map-online" src="./img/map.jpg" width="320px" height="200px">
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
+      <div class="page-footer__logo-content">
         <img class="page-footer__image" src="https://via.placeholder.com/150x150">
         <a class="page-footer__logo">
-          <img class="logo__image" src="https://via.placeholder.com/150x150">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150">
         </a>
       </div>
-      <div class="page-footer__social">
+      <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link">
@@ -236,9 +244,9 @@
       </div>
       <div class="page-footer__copy">
         <p>Разработано</p>
-        <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
-          <img class="copy__image" src="https://via.placeholder.com/150x150">
+          <img class="page-footer__copy-image" src="https://via.placeholder.com/150x150">
         </a>
       </div>
     </footer>

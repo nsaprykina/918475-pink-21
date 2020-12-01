@@ -1,7 +1,42 @@
 .page-header {
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 
   background-color: @color-dark-blue;
   color: @color-white;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -108px;
+    background-color: @color-black;
+    opacity: 0.3;
+    padding: 27px 130px 43px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__content {
+  margin: 0 auto;
+  padding: 20px 23px;
+  box-shadow: 0 1px 0 #000000;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 27px 20px 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.page-header__toggle {
+  width: 23px;
+  height: 23px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

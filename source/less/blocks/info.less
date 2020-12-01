@@ -2,33 +2,106 @@
   background-color: @color-dark-blue;
   color: @color-white;
   padding: 0 0 38px;
+
+  @media (min-width: @tablet-width) {
+    height: 372px;
+    background:
+      url("../img/phone_2.png") no-repeat right bottom,
+      url("../img/back-tablet.jpg") no-repeat;
+    background-size:
+      auto,
+      cover;
+    padding: 212px 94px 146px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 457px;
+    background:
+      url("../img/phone_3.png") no-repeat right bottom,
+      url("../img/back-desktop.jpg") no-repeat;
+    padding: 224px 250px 172px 130px;
+  }
 }
 
 .info__content {
-  width: 280px;
-  height: 272px;
-  padding: 95px 20px;
+  height: 315px;
+  padding: 95px 105px 56px;
   background:
-    url("../img/screen.jpg") no-repeat 104px 212px,
-    url("../img/phone.png") no-repeat 0 180px,
+    url("../img/phone.png") no-repeat right 180px,
     url("../img/back-mobile.jpg") no-repeat;
+  background-size:
+    auto,
+    cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 20px 0 0;
+    padding: 0;
+  }
 }
 
 .info__title {
   margin: 0;
+  margin-left: -85px;
+  margin-right: -85px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 -116px 24px;
+    padding: 0;
+    width: 255px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+}
+
+.info__image {
+  align-self: flex-end;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/screen.jpg") no-repeat;
+    background-size: auto;
+    width: 195px;
+    height: 346px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/screen_3.jpg") no-repeat;
+    width: 230px;
+    height: 408px;
+  }
 }
 
 .info__button {
-  width: 280px;
-  height: 55px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   margin: 49px 20px 53px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: -171px 0 71px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: -222px 0 93px;
+  }
 }
 
 .info__button-link {
@@ -36,19 +109,49 @@
   color: @color-white;
   border: 3px solid @color-white;
   border-radius: 29px;
-  padding: 21px 35px;
+  padding: 18px 35px;
+  margin: -10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 46px;
+  }
 }
 
 .info__list {
   padding: 0 0 28px;
+  margin: 0 auto;
+  display: flex;
+  width: 207px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 46px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 58px;
+  }
 }
 
 .info__item {
   list-style-type: none;
+  margin-right: 35px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .info__paragraph {
-  margin: 0;
+  margin: 0 auto;
   width: 280px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 300px;
+  }
 }

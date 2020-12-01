@@ -9,11 +9,34 @@
 
 .main-nav__list {
   margin: 0;
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
   list-style-type: none;
   text-transform: uppercase;
+  padding: 25px 20px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    box-shadow: none;
+    padding: 0;
+    padding-left: 79px;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .main-nav__link {

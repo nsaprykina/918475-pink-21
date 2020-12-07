@@ -1,5 +1,42 @@
 .page-footer {
-  padding: 40px 0;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 20px 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 130px 75px;
+  }
+}
+
+.page-footer__logo-content {
+  width: 145px;
+  height: 40px;
+  margin: 0 auto 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__copy {
+  width: 130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__copy-text {

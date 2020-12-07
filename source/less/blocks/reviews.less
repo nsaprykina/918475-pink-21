@@ -3,6 +3,18 @@
   width: 280px;
   height: 268px;
   padding: 50px 20px 60px;
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding: 109px 20px 22px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 72px 130px 41px;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
 }

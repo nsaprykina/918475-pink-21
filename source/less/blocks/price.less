@@ -1,5 +1,7 @@
 .price {
   background-color: @color-light-grey;
+  padding-top: 129px;
+  padding-bottom: 48px;
 }
 
 .price__strong {
@@ -17,6 +19,28 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+
+  &:first-child {
+    background-color: @color-light-grey;
+    border: 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.price__cell-first {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 153px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .price__title {
@@ -35,9 +59,12 @@
 }
 
 .price__hit {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
   width: 74px;
   height: 0;
-  transform: rotate(-45deg) translateX(36px) translateY(-73px);
+  transform: rotate(-45deg) translateX(38px) translateY(-77px);
 }
 
 .price__hit-brand {
@@ -49,6 +76,7 @@
 .price__cell {
   width: 276px;
   height: 59px;
+  padding: 24px 20px 25px
 }
 
 .price__name-service {
@@ -58,4 +86,30 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
+}
+
+.price__name-service--none {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-on {
+  width: 31px;
+  height: 21px;
+}
+
+.price-off {
+  width: 27px;
+  height: 27px;
+}
+
+.price__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

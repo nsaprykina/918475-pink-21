@@ -1,28 +1,99 @@
 .page-modal-arror {
-  width: 320px;
-  height: 289px;
-  padding: 44px 22px 52px;
+  padding: 44px 15px 52px;
   text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background-color: @color-white;
+  position: relative;
+  top: -1710px;
+  width: 274px;
+  margin: auto;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 65px 54px;
+    top: -2425px;
+    width: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 352px;
+    padding: 49px 214px 0;
+    top: -1241px;
+  }
 }
 
 .page-modal-arror__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    width: 260px;
+    margin: 0 auto 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-bottom: 37px;
+  }
 }
 
 .page-modal-arror__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 50px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 320px;
+    margin: 0 auto 40px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-bottom: 68px;
+  }
+}
+
+.page-modal-arror__button-content {
+  margin: 0;
+  padding: 0;
+  background-color: @color-white;
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-light-grey;
+    padding: 52px 0;
+    margin-left: -214px;
+    margin-right: -214px;
+  }
 }
 
 .page-modal-arror__button {
-  background-color: @color-swamp;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: @color-white;
   text-transform: uppercase;
-  padding: 23px 125px;
+  color: @color-white;
+  margin: 0;
+  padding: 23px 122px;
   border: 2px solid @color-swamp;
   border-radius: 1px;
+  background-color: @color-swamp;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 132px;
+    width: 292px;
+    margin: 0 auto;
+  }
 }

@@ -9,10 +9,12 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      <div class="page-header__content">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="74px" height="23px">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -41,91 +43,98 @@
 
     <main class="page-main">
       <div class="page-main__title">
-        <h1 class="page-mail__title-first">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-main__title-first">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="page-main__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-main__request">Пожалуйста, заполните форму ниже:</span></p>
+
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__list">
           <div class="form__item">
             <label class="form__label" for="surname-field">Фамилия:</label>
-            <input class="form__input" type="text" name="surname" id="surname-field" value="Укажите фамилию*" required>
+            <input class="form__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
           </div>
           <div class="form__item">
             <label class="form__label" for="name-field">Имя:</label>
-            <input class="form__input" type="text" name="name" id="name-field" value="Введите ваше имя*" required>
+            <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
           </div>
           <div class="form__item">
             <label class="form__label" for="patronymic-field">Отчество:</label>
-            <input class="form__input" type="text" name="patronymic" id="patronymic-field" value="Ну и отчество тоже">
+            <input class="form__input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
           </div>
         </fieldset>
 
-        <fieldset class="form__checkbox">
-          <label class="form__label" for="progress-field">Ваши безбашенные достижения в путешествии</label>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="selfie" checked> Сделал селфи с акулой
+        <div class="form__background-color form__background-color--checkbox">
+          <fieldset class="form__checkbox">
+            <legend class="form__legend-checkbox" for="progress-field">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="selfie" checked> Сделал селфи с акулой
+            </div>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="burn" checked> Обгорел на пляже
+            </div>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="see"> Видел Чака Норриса
+            </div>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="buy"> Накупил сувениров
+            </div>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="withhold" checked> Удержал башню
+            </div>
+            <div class="form__progress">
+              <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="trash"> Разгромил отель
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset class="form__list-contact">
+          <legend class="form__legend-contact">Контактная информация</legend>
+          <div class="form__item-contact">
+            <label class="form__label-contact" for="tel-field">Номер телефона</label>
+            <input class="form__input-contact form__input-contact--tel" type="tel" name="tel" id="tel-field" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="Номер, пожалуйста">
           </div>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="burn" checked> Обгорел на пляже
-          </div>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="see"> Видел Чака Норриса
-          </div>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="buy"> Накупил сувениров
-          </div>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="withhold" checked> Удержал башню
-          </div>
-          <div class="form__progress">
-            <input class="form__choice" type="checkbox" name="progress" id="progress-field" value="trash"> Разгромил отель
+          <div class="form__item-contact">
+            <label class="form__label-contact" for="email-field">Адрес почты</label>
+            <input class="form__input-contact" type="email" name="email" id="email-field" value="Введите почту *" required>
           </div>
         </fieldset>
 
-        <fieldset class="form__list">
-          <div class="form__item">
-            <label class="form__label" for="tel-field">Номер телефона</label>
-            <input class="form__input" type="tel" name="tel" id="tel-field" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="Номер, пожалуйста">
-          </div>
-          <div class="form__item">
-            <label class="form__label" for="email-field">Адрес почты</label>
-            <input class="form__input" type="email" name="email" id="email-field" value="Введите почту *" required>
-          </div>
-        </fieldset>
-
-        <fieldset class="form__application">
-          <legend class="form__legend">С каким приложением путешествовать?</legend>
-          <div class="form__sistem">
-            <input class="form__sistem-input" type="radio" name="application" id="iOS-field" value="iOS" checked>
-            <label class="form__sistem-label" for="iOS-field">Pink для iOS</label>
-          </div>
-          <div class="form__sistem">
-            <input class="form__sistem-input" type="radio" name="application" id="android-field" value="android">
-            <label class="form__sistem-label" for="android-field">Pink на Android</label>
-          </div>
-          <div class="form__sistem">
-            <input class="form__sistem-input" type="radio" name="application" id="windows-field" value="windows">
-            <label class="form__sistem-label" for="windows-field">Windows Phone</label>
-          </div>
-        </fieldset>
+        <div class="form__background-color form__background-color--application">
+          <fieldset class="form__application">
+            <legend class="form__legend">С каким приложением путешествовать?</legend>
+            <div class="form__sistem">
+              <input class="form__sistem-input" type="radio" name="application" id="iOS-field" value="iOS" checked>
+              <label class="form__sistem-label" for="iOS-field">Pink для iOS</label>
+            </div>
+            <div class="form__sistem">
+              <input class="form__sistem-input" type="radio" name="application" id="android-field" value="android">
+              <label class="form__sistem-label" for="android-field">Pink на Android</label>
+            </div>
+            <div class="form__sistem">
+              <input class="form__sistem-input" type="radio" name="application" id="windows-field" value="windows">
+              <label class="form__sistem-label" for="windows-field">Windows Phone</label>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="form__textarea">
-          <label class="form__textarea-label" for="commit-field">Опишите свои эмоции</label>
+          <legend class="form__textarea-legend" for="commit-field">Опишите свои эмоции</legend>
           <textarea class="form__textarea-commit" name="commit" id="commit-field">Можно прям в красках, не стесняясь в выражениях</textarea>
         </fieldset>
-
-        <input class="form__submit" type="submit" value="Отправить форму">
+        <div class="form__submit">
+          <input class="form__submit-button" type="submit" value="Отправить форму">
+          <p class="form__compulsory"> <span class="form__compulsory-color">*</span> &mdash; обязательные <span class="form__required-fields">для заполнения</span> поля</p>
+        </div>
 
       </form>
-      <p class="page-main__compulsory"> <span class="page-main__color">*</span> &mdash; обязательные поля</p>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__logo-content">
-        <img class="page-footer__image" src="https://via.placeholder.com/150x150">
-        <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150">
+        <img class="page-footer__image" src="https://via.placeholder.com/150x150" width="59px" height="40px">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="74px" height="23px">
         </a>
       </div>
       <div class="page-footer__social social">
@@ -133,28 +142,28 @@
           <li class="social__item">
             <a class="social__link">
               <span class="visually-hidden">Twitter</span>
-              <img class="social__image" src="https://via.placeholder.com/150x150">
+              <img class="social__image" src="https://via.placeholder.com/150x150" width="18px" height="18px">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link">
               <span class="visually-hidden">Facebook</span>
-              <img class="social__image" src="https://via.placeholder.com/150x150">
+              <img class="social__image" src="https://via.placeholder.com/150x150" width="18px" height="18px">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link">
               <span class="visually-hidden">Youtube</span>
-              <img class="social__image" src="https://via.placeholder.com/150x150">
+              <img class="social__image" src="https://via.placeholder.com/150x150" width="18px" height="18px">
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copy">
         <p class="page-footer__copy-text">Разработано</p>
-        <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
-          <img class="copy__image" src="https://via.placeholder.com/150x150">
+          <img class="page-footer__copy-image" src="https://via.placeholder.com/150x150" width="27px" height="34px">
         </a>
       </div>
     </footer>
@@ -162,7 +171,9 @@
     <section class="page-modal-arror">
       <h2 class="page-modal-arror__title">Что-то пошло не так!</h2>
       <p class="page-modal-arror__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="page-modal-arror__button">Ок</button>
+      <div class="page-modal-arror__button-content">
+        <button class="page-modal-arror__button">Ок</button>
+      </div>
     </section>
 
     <section class="page-modal-confirmation">

@@ -1,9 +1,25 @@
 .page-modal-confirmation {
-  width: 276px;
-  height: 336px;
   padding: 44px 22px 0;
+  margin: auto;
   text-align: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  position: relative;
+  width: 276px;
+  top: -1151px;
+  background-color: white;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 40px 0;
+    width: 380px;
+    top: -1831px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -780px;
+    width: 456px;
+    padding: 49px 162px 0;
+  }
 }
 
 .page-modal-confirmation__title {
@@ -12,11 +28,24 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+  }
 }
 
 .page-modal-confirmation__paragraph {
   margin: 0;
   margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
 }
 
 .page-modal-confirmation__button {
@@ -24,6 +53,18 @@
   width: 320px;
   height: 163px;
   background-color: @color-light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: auto;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -162px;
+    margin-right: -162px;
+  }
 }
 
 .page-modal-confirmation__button-close {

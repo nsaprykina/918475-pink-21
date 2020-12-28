@@ -2,8 +2,10 @@
   background-color: @color-dark-blue;
   color: @color-white;
   padding: 0 0 38px;
+  min-width: 320px;
 
   @media (min-width: @tablet-width) {
+    min-width: 546px;
     height: 372px;
     background:
       url("../img/phone_2.png") no-repeat right bottom,
@@ -15,7 +17,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 457px;
+    min-width: 960px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 852px;
     background:
       url("../img/phone_3.png") no-repeat right bottom,
       url("../img/back-desktop.jpg") no-repeat;
@@ -28,7 +34,7 @@
 
 .info__content {
   height: 315px;
-  padding: 95px 105px 56px;
+  padding: 95px 105px 56px 20px;
   background:
     url("../img/phone.png") no-repeat right 180px,
     url("../img/back-mobile.jpg") no-repeat;
@@ -55,9 +61,8 @@
 }
 
 .info__title {
-  margin: 0;
-  margin-left: -85px;
-  margin-right: -85px;
+  width: 280px;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
@@ -112,7 +117,7 @@
   color: @color-white;
   border: 3px solid @color-white;
   border-radius: 29px;
-  padding: 18px 35px;
+  padding: 18px 34px;
   margin: -10px;
 
   @media (min-width: @tablet-width) {

@@ -1,11 +1,19 @@
 .page-header {
   margin: 0;
   padding: 0;
-
+  min-width: 320px;
   background-color: @color-dark-blue;
   color: @color-white;
 
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
+
   @media (min-width: @desktop-width) {
+    min-width: 960px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-bottom: -108px;
     background-color: @color-black;
     opacity: 0.3;

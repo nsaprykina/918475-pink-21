@@ -9,10 +9,12 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150">
-      </a>
-      <button class="page-header__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      <div class="page-header__content">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="74px" height="23px">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="main-nav__button">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -40,10 +42,11 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__title">
-        <h1 class="page-main__title-first">Фотографии пользователей</h1>
+      <div class="page-main__title page-main__title--catalog">
+        <h1 class="page-main__title-first page-main__title-first--catalog">Фотографии пользователей</h1>
       </div>
-      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="page-main__paragraph page-main__paragraph--catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
       <section class="photo-comments">
         <ul class="photo-comments__list">
           <li class="photo-comments__item">

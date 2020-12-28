@@ -1,16 +1,22 @@
 .page-footer {
   margin: 0 auto;
   padding: 40px 20px;
+  min-width: 280px;
 
   @media (min-width: @tablet-width) {
     padding: 36px 20px 51px;
+    min-width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 960px;
     padding: 70px 130px 75px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 

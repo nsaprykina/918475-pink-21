@@ -1,13 +1,19 @@
 .feedback {
-  margin: 0;
-  padding: 50px 20px 22px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 55px 25px 30px;
+    min-width: 610px;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 960px;
     padding: 74px 130px 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 

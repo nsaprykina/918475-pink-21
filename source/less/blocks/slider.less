@@ -4,27 +4,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 75px;
-
-    &::before {
-      content: "‹";
-      font-size: 76px;
-      color: @color-grey;
-      opacity: 0.3;
-      position: absolute;
-      top: 162px;
-      left: -3px;
-    }
-
-    &::after {
-      content: "‹";
-      font-size: 76px;
-      color: @color-grey;
-      opacity: 0.3;
-      position: absolute;
-      top: 182px;
-      right: -2px;
-      transform: rotate(180deg);
-    }
   }
 }
 
@@ -106,6 +85,29 @@
     margin: 121px 0 0;
     padding-right: 0;
     text-align: center;
+  }
+}
+
+.slider__button {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 22px;
+    height: 41px;
+    margin-top: -185px;
+
+    &--back {
+      display: block;
+      float: left;
+      margin-left: -75px;
+    }
+
+    &--forward {
+      display: block;
+      float: right;
+      margin-right: -75px;
+    }
   }
 }
 

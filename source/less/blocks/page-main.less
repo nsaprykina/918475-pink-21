@@ -1,6 +1,15 @@
 .page-main {
   background-color: @color-white;
   margin: 0;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 960px;
+  }
 }
 
 .page-main__title {
@@ -12,28 +21,50 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &--catalog {
+    padding: 102px 20px 84px;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 191px 20px 74px;
     background-size: cover;
+
+    &--catalog {
+      padding: 191px 20px 143px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 174px 130px 83px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &--catalog {
+      padding: 184px 130px 104px;
+    }
   }
 }
 
 .page-main__title-first {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 32.68px;
   font-weight: 300;
   font-style: normal;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
+
+  &--catalog {
+    width: min-content;
+    margin: auto;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68.09px;
     font-weight: 300;
+    width: 620px;
   }
 }
 
@@ -44,17 +75,31 @@
   padding: 54px 15px 55px;
   text-align: center;
 
+  &--catalog {
+    width: 250px;
+    padding: 54px 20px 60px;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 100px 20px 12px;
     width: 490px;
     font-size: 18px;
     margin: 0 auto;
+
+    &--catalog {
+      padding: 100px 20px 85px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 92px 130px 85px;
     margin: 0 auto;
     width: 756px;
+
+    &--catalog {
+      padding: 100px 130px 97px;
+      width: 572px;
+    }
   }
 }
 
